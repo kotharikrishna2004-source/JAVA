@@ -1,0 +1,30 @@
+nav li {
+  display: inline-block;
+  margin-right: 60px;
+  padding-left: 100px;
+}
+nav a {
+  text-decoration: none;
+}
+header {
+  border: 2px burlywood solid;
+}
+h1 {
+  text-align: center;
+}
+
+a:hover {
+  color: cadetblue;
+}
+
+input[type="text"]:focus {
+  border-color: green;
+}
+
+input[type="email"]:focus {
+  border-color: orange;
+}
+
+input[type="password"]:focus {
+  border-color: red;
+}

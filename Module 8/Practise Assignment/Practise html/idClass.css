@@ -1,0 +1,17 @@
+#main-heading {
+  color: blue;
+  text-align: center;
+}
+
+.common-text {
+  color: green;
+  font-size: 18px;
+  margin: 10px;
+}
+
+#special-box {
+  background-color: yellow;
+  padding: 20px;
+  border: 2px solid black;
+  width: fit-content;
+}

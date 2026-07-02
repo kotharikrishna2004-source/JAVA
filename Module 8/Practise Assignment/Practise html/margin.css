@@ -1,0 +1,11 @@
+h1 {
+  margin-left: 50px;
+  background-color: bisque;
+}
+
+.d1 {
+  border: 2px rgb(208, 143, 23) solid;
+  margin-bottom: 30px;
+  width: 200px;
+  padding: 20px;
+}
