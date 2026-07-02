@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+     <!-- DB Connection -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/work_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Hibernate Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <!-- Auto table creation -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Show SQL -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Use JDBC transaction coordinator (non-JTA) to avoid JTA platform warning -->
+        <property name="hibernate.transaction.coordinator_class">jdbc</property>
+
+        <!-- Mapping classes -->
+       <mapping class="Model.Reg"/>
+       <mapping class="Model.Blog"/>
+   </session-factory>
+</hibernate-configuration>
